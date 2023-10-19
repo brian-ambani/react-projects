@@ -1,0 +1,24 @@
+.AddTodo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 20px;
+}
+
+.todoInput {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
