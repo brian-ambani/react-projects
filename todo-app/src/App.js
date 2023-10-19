@@ -1,11 +1,10 @@
 import styles from "./App.module.css";
-import AddTodo from "./components/AddTodo";
-import DisplayTodos from "./components/DisplayTodos";
+import AddTodo from "./components/addTodo/AddTodo";
+import DisplayTodos from "./components/displayTodo/DisplayTodos";
 
 function App() {
   return (
     <div className={styles.App}>
-      <h1>Hello react</h1>
       <AddTodo />
       <DisplayTodos />
     </div>
