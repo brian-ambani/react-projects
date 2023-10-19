@@ -6,9 +6,8 @@
 }
 
 .App {
-  /* text-align: center; */
-  background-color: sandybrown;
-
+  display: flex;
+  flex-direction: column;
   max-width: 1400px;
   margin: 0 auto;
   padding: 10px 20px;
