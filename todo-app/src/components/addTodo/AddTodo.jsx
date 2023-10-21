@@ -1,12 +1,16 @@
 import styles from "./AddTodo.module.css";
 
-export default function AddTodo({ setInputText }) {
+export default function AddTodo({ inputText, setInputText, todos, setTodos }) {
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
 
   const submitTodoHandler = (e) => {
     e.preventDefault();
+    setTodos([
+      ...todos,
+      { text: inputText, completed: false, id: Math.random() * 1000 },
+    ]);
   };
 
   return (
