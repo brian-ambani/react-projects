@@ -5,6 +5,7 @@ import DisplayTodos from "./components/displayTodo/DisplayTodos";
 
 function App() {
   const [inputText, setInputText] = useState("");
+  const [todos, setTodos] = useState([]); // [{id: 1, text: "todo1"}, {id: 2, text: "todo2"}
 
   return (
     <div className={styles.App}>
