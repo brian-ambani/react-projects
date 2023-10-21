@@ -11,13 +11,20 @@ export default function AddTodo({ inputText, setInputText, todos, setTodos }) {
       ...todos,
       { text: inputText, completed: false, id: Math.random() * 1000 },
     ]);
+
+    setInputText("");
   };
 
   return (
     <div className={styles.AddTodo}>
       <h1>Todo App</h1>
       <div className={styles.todoInput}>
-        <input onChange={inputTextHandler} type="text" placeholder="Add Todo" />
+        <input
+          value={inputText}
+          onChange={inputTextHandler}
+          type="text"
+          placeholder="Add Todo"
+        />
         <button onClick={submitTodoHandler}>Add todo</button>
       </div>
     </div>
