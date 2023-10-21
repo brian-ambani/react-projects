@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className={styles.App}>
-      <AddTodo setInputText={setInputText} />
+      <AddTodo todos={todos} setTodos={setTodos} setInputText={setInputText} />
       <DisplayTodos inputText={inputText} />
     </div>
   );
