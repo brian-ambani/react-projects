@@ -48,3 +48,9 @@ button {
 button:hover {
   background: #2ecc71;
 }
+
+/* This does not work */
+.dark {
+  background: #353333;
+  color: #fff;
+}

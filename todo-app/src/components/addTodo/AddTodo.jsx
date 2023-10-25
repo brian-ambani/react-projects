@@ -15,9 +15,16 @@ export default function AddTodo({ inputText, setInputText, todos, setTodos }) {
     setInputText("");
   };
 
+  // Change background color but doesn't work
+  const handleBackground = () => {
+    const body = document.querySelector("body");
+    body.classList.toggle("dark");
+  };
+
   return (
     <div className={styles.AddTodo}>
       <h1>Todo App</h1>
+      <button onClick={handleBackground}>Dark</button>
       <div className={styles.todoInput}>
         <input
           value={inputText}
