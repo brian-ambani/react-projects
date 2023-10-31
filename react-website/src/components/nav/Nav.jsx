@@ -9,7 +9,9 @@ export default function Nav() {
         <div className="nav__link">Home</div>
         <div className="nav__link">About</div>
         <div className="nav__link">Pricing</div>
-        <div className="nav__link">Contact</div>
+        <div className="nav__link">
+          <button>Contact</button>
+        </div>
       </div>
     </div>
   );
