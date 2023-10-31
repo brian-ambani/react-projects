@@ -7,6 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #09050d;
   color: aliceblue;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
 }
 
 code {
