@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d8f8ee;
+  text-decoration: none;
+}
+
+.nav__logo:hover {
+  color: #e9ecec;
+  cursor: pointer;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link {
+  margin: 0 10px;
+}
