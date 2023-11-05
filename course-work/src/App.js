@@ -1,9 +1,12 @@
 import "./App.css";
+import Hero from "./components/hero/Hero";
+import Nav from "./components/nav/Nav";
 
 function App() {
   return (
     <div className="App">
-      <p> Hello World! </p>
+      <Nav />
+      <Hero />
     </div>
   );
 }
