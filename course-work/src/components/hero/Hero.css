@@ -1,5 +1,5 @@
 .hero {
-  background: #fff;
+  background: #eee;
   padding: 100px 0;
 }
 
@@ -26,7 +26,6 @@
   width: 650px;
   font-size: 3rem;
   font-weight: 700;
-  color: #000;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -39,7 +38,6 @@ span {
   width: 650px;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #000;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -60,4 +58,30 @@ span {
 
 .btn:hover {
   background: #000;
+}
+
+.hero_stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.hero_stats_item {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0.8rem;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.hero_stats_item p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }

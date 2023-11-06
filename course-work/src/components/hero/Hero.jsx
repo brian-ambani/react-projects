@@ -24,17 +24,17 @@ export default function Hero() {
         </div>
         <div className="hero_stats">
           <div className="hero_stats_item">
-            <CiBoxList />
+            <CiBoxList className="icon" />
             <h1>10+</h1>
             <p>Projects Completed</p>
           </div>
           <div className="hero_stats_item">
-            <BiTime />
-            <h1>2+</h1>
+            <BiTime className="icon" />
+            <h1>2 years+</h1>
             <p>Experience</p>
           </div>
           <div className="hero_stats_item">
-            <IoIosPeople />
+            <IoIosPeople className="icon" />
             <h1>20+</h1>
             <p>Positive Feedback</p>
           </div>

@@ -1,0 +1,39 @@
+.newsletter {
+  padding: 20px 0;
+  background-color: #4d4dc7;
+  margin-bottom: 3rem;
+}
+
+.newsletter .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsletter .container h1 {
+  color: #fff;
+}
+
+.newsletter .container form {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-right: 30px;
+}
+
+.input_btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #111;
+  color: #f5f5f5;
+  cursor: pointer;
+}

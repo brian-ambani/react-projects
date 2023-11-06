@@ -6,12 +6,15 @@ export default function Nav() {
     <div className="navbar">
       <div className="container">
         <div className="logo">
-          <a href="#">React</a>
+          <a href="#">Flin Tech</a>
         </div>
         <div className="main-menu">
           <ul>
             <li>
               <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
             </li>
             <li>
               <a href="#">About</a>

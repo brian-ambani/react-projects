@@ -1,8 +1,14 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #eee;
+  opacity: 0.9;
+  z-index: 1;
+}
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #eee;
   padding: 20px;
 }
 
