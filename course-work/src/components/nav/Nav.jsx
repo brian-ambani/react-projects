@@ -3,18 +3,28 @@ import "./Nav.css";
 
 export default function Nav() {
   return (
-    <div className="container">
-      <nav>
-        <div className="logo">React</div>
-        <div className="nav-items">
+    <div className="navbar">
+      <div className="container">
+        <div className="logo">
+          <a href="#">React</a>
+        </div>
+        <div className="main-menu">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Pricing</li>
-            <li>Contact</li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
           </ul>
         </div>
-      </nav>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,28 @@
-nav {
-  margin-top: 20px;
+.navbar .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 20px;
 }
 
-.nav-items ul {
+.navbar .main-menu ul {
   display: flex;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: aqua;
+}
+
+.navbar .main-menu ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.navbar .main-menu ul li a:hover {
+  color: #555;
 }

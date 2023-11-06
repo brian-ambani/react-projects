@@ -1,9 +1,12 @@
 import React from "react";
+import "./Hero.css";
 
 export default function Hero() {
   return (
-    <div className="container">
-      <h3>Hero section</h3>
+    <div className="hero">
+      <div className="container">
+        <h2>Hero</h2>
+      </div>
     </div>
   );
 }
