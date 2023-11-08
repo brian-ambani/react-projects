@@ -30,12 +30,12 @@ export default function Hero() {
           </div>
           <div className="hero_stats_item">
             <BiTime className="icon" />
-            <h1>2 years+</h1>
+            <h1>15 months+</h1>
             <p>Experience</p>
           </div>
           <div className="hero_stats_item">
             <IoIosPeople className="icon" />
-            <h1>20+</h1>
+            <h1>7+</h1>
             <p>Positive Feedback</p>
           </div>
         </div>
