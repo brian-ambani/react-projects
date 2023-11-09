@@ -2,10 +2,18 @@ import "./App.css";
 import Employee from "./components/Employee";
 
 function App() {
+  const ShowEmpoloyees = true;
   return (
     <div className="App">
-      <h1>React 18 Alpha</h1>
-      <Employee />
+      {ShowEmpoloyees ? (
+        <>
+          <Employee />
+          <Employee />
+          <Employee />
+        </>
+      ) : (
+        <p>There are no employees</p>
+      )}
     </div>
   );
 }
