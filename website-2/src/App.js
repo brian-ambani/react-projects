@@ -19,9 +19,48 @@ function App() {
           />
 
           <div className="flex flex-wrap">
-            <Employee name="Brian" role="Intern" />
-            <Employee name="Mike" role={role} />
-            <Employee name="Micah" />
+            <Employee
+              name="Brian"
+              role="Intern"
+              img="https://avatars.githubusercontent.com/u/1000223?v=4"
+            />
+            <Employee
+              name="Mike"
+              role={role}
+              img="https://avatars.githubusercontent.com/u/1000223?v=4"
+            />
+            <Employee
+              name="Micah"
+              img="https://avatars.githubusercontent.com/u/1000223?v=4"
+            />
+            <Employee
+              name="Brian"
+              role="Intern"
+              img="https://avatars.githubusercontent.com/u/1000223?v=4"
+            />
+            <Employee
+              name="Mike"
+              role={role}
+              img="https://avatars.githubusercontent.com/u/1000223?v=4"
+            />
+            <Employee
+              name="Micah"
+              img="https://avatars.githubusercontent.com/u/1000223?v=4"
+            />
+            <Employee
+              name="Brian"
+              role="Intern"
+              img="https://avatars.githubusercontent.com/u/1000223?v=4"
+            />
+            <Employee
+              name="Mike"
+              role={role}
+              img="https://avatars.githubusercontent.com/u/1000223?v=4"
+            />
+            <Employee
+              name="Micah"
+              img="https://avatars.githubusercontent.com/u/1000223?v=4"
+            />
           </div>
         </>
       ) : (
