@@ -3,11 +3,11 @@ import Employee from "./components/Employee";
 import { useState } from "react";
 
 function App() {
-  const [role, setRole] = useState("dev");
+  const [role, setRole] = useState("Prodct Engineer");
 
   const ShowEmpoloyees = true;
   return (
-    <div className="App bg-red-300">
+    <div className="App">
       {ShowEmpoloyees ? (
         <>
           <input
@@ -17,9 +17,12 @@ function App() {
               setRole(e.target.value);
             }}
           />
-          <Employee name="Brian" role="Intern" />
-          <Employee name="Mike" role={role} />
-          <Employee name="Micah" />
+
+          <div className="flex flex-wrap">
+            <Employee name="Brian" role="Intern" />
+            <Employee name="Mike" role={role} />
+            <Employee name="Micah" />
+          </div>
         </>
       ) : (
         <p>There are no employees</p>
