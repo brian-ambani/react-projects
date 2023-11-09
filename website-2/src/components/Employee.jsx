@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function h1() {
+export default function (props) {
   return (
     <div>
-      <h1>Employee</h1>
+      <h3>{props.name}</h3>
+      <p>{props.role ? props.role : "No roles"}</p>
     </div>
   );
 }
