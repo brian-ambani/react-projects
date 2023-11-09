@@ -1,12 +1,11 @@
 import "./App.css";
-import Content from "./Content";
+import Employee from "./components/Employee";
 
 function App() {
   return (
     <div className="App">
       <h1>React 18 Alpha</h1>
-
-      <Content />
+      <Employee />
     </div>
   );
 }
