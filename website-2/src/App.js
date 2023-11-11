@@ -44,6 +44,9 @@ function App() {
     },
   ]);
 
+  function updateEmployee(id, newName, newRole) {
+    console.log("updateEmployee inside of app.js");
+  }
   const ShowEmpoloyees = true;
   return (
     <div className="App">
@@ -61,10 +64,12 @@ function App() {
             {employees.map((employee) => {
               return (
                 <Employee
-                  key={uuidv4()}
+                  key={employee.id}
+                  id={employee.id}
                   name={employee.name}
                   role={employee.role}
                   img={employee.img}
+                  updateEmployee={updateEmployee}
                 />
               );
             })}
