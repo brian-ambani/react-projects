@@ -2,7 +2,10 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-function EditEmployee({ name, role }) {
+function EditEmployee(props) {
+  const [name, setName] = useState(props.name);
+  const [role, setRole] = useState(props.role);
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -43,6 +46,9 @@ function EditEmployee({ name, role }) {
                   id="name"
                   type="text"
                   value={name}
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }} // this is the line that needs to be changed
                 />
               </div>
             </div>
@@ -61,6 +67,9 @@ function EditEmployee({ name, role }) {
                   id="role"
                   type="text"
                   value={role}
+                  onChange={(e) => {
+                    setRole(e.target.value);
+                  }} // this is the line that needs to be changed
                 />
               </div>
             </div>
