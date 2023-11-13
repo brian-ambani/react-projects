@@ -8,7 +8,7 @@ export default function AppUser() {
       <User
         img="https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg?auto=compress&cs=tinysrgb&w=200"
         name="Brian"
-        age={18}
+        age={70}
         role="Fullstack developer"
         nationality="Kenya"
       />
