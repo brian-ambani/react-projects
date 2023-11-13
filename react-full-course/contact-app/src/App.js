@@ -1,11 +1,12 @@
 import React from "react";
+import "./App.css";
 import Forms from "./components/Forms";
 import Lists from "./components/Lists";
 import AppUser from "./components/props/AppUser";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <h1>REACT COMPLETE COURSE</h1>
       {/* <Lists /> */}
       <AppUser />
