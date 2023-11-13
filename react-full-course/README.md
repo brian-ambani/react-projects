@@ -6,4 +6,4 @@
 (A) Functional Components \
 (B) JSX \
 (C) Props and State \
-(D) UseState & UseEffect \
+(D) UseState & UseEffect
