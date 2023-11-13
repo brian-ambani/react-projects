@@ -20,7 +20,6 @@ export default function Forms() {
         <input type="text" value={name} onChange={handleChange} />
         <button>Submit</button>
       </form>
-      <h3> You typed{}</h3>
     </div>
   );
 }
