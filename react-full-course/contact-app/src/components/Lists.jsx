@@ -5,7 +5,7 @@ export default function Lists() {
   return (
     <div>
       {names.map((name) => {
-        return <h1>{name}</h1>;
+        return <h2 key={Math.random() * 10}>{name}</h2>;
       })}
     </div>
   );
