@@ -11,7 +11,13 @@ export default function AppUser() {
         age={70}
         role="Fullstack developer"
         realData={{ name: "Mike", location: "Kenya" }}
-      />
+      >
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+          voluptates explicabo odio, iure et odit maxime distinctio rerum
+          officia dicta!
+        </p>
+      </User>
     </div>
   );
 }
