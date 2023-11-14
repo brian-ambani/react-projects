@@ -10,6 +10,7 @@ export default function AppUser() {
         name="Brian"
         age={70}
         role="Fullstack developer"
+        realData={{ name: "Mike", location: "Kenya" }}
       />
     </div>
   );
