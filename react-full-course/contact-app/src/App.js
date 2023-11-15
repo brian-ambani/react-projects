@@ -4,6 +4,7 @@ import Forms from "./components/Forms";
 import Lists from "./components/Lists";
 import AppUser from "./components/props/AppUser";
 import UseEffectHook from "./components/UseEffectHook";
+import ComponentA from "./components/contextAPI/ComponentA";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <Lists /> */}
       {/* <AppUser /> */}
       {/* <Forms /> */}
-      <UseEffectHook />
+      {/* <UseEffectHook /> */}
+      <ComponentA />
     </div>
   );
 }
