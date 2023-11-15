@@ -18,7 +18,9 @@ export default function UseEffectHook() {
   return (
     <div>
       {data.map((x) => (
-        <h2 key={Math.random()}>{x.title}</h2>
+        <ul key={Math.random()}>
+          <li>{x.title}</li>
+        </ul>
       ))}
     </div>
   );
