@@ -7,6 +7,7 @@ import UseEffectHook from "./components/UseEffectHook";
 import ComponentA from "./components/contextAPI/ComponentA";
 import AppContext from "./components/useContext/AppContext";
 import Counter from "./components/Counter";
+import Todo from "./todoApp/Todo";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <UseEffectHook /> */}
       {/* <ComponentA /> */}
       {/* <AppContext /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Todo />
     </div>
   );
 }
