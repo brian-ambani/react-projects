@@ -6,6 +6,7 @@ import AppUser from "./components/props/AppUser";
 import UseEffectHook from "./components/UseEffectHook";
 import ComponentA from "./components/contextAPI/ComponentA";
 import AppContext from "./components/useContext/AppContext";
+import Counter from "./components/Counter";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/* <Forms /> */}
       {/* <UseEffectHook /> */}
       {/* <ComponentA /> */}
-      <AppContext />
+      {/* <AppContext /> */}
+      <Counter />
     </div>
   );
 }
