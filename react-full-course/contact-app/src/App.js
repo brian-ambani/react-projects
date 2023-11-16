@@ -5,7 +5,7 @@ import Lists from "./components/Lists";
 import AppUser from "./components/props/AppUser";
 import UseEffectHook from "./components/UseEffectHook";
 import ComponentA from "./components/contextAPI/ComponentA";
-import AppContext from "./components/contextAPI/AppContext";
+import AppContext from "./components/useContext/AppContext";
 
 function App() {
   return (
