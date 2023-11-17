@@ -20,11 +20,11 @@ function App() {
   return (
     <div className="App">
       <h1>Todo App</h1>
-      <TodoInput addTask={addTask} deleteTask={deleteTask} />
+      <TodoInput addTask={addTask} />
       <div>
         <ul>
           {todoList.map((todo) => (
-            <TaskItem todo={todo} />
+            <TaskItem todo={todo} deleteTask={deleteTask} />
           ))}
         </ul>
         {todoList.length === 0 ? <p>You are done!</p> : null}
