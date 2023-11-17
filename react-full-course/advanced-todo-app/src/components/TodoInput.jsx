@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 
-export default function TodoInput() {
+export default function TodoInput({ addTask }) {
   const [task, setTask] = useState("");
 
   const handleChange = (e) => {
     setTask(e.target.value);
-    console.log(task);
   };
 
-  const addTask = (e) => {
+  const handleAddTask = (e) => {
     e.preventDefault();
-
+    addTask(task);
     // clear the input field
     setTask("");
   };
   return (
     <div>
-      <form onSubmit={addTask}>
+      <form onSubmit={handleAddTask}>
         <input
           type="text"
           value={task}
