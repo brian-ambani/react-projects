@@ -2,8 +2,6 @@ import React from "react";
 import { MdDeleteSweep } from "react-icons/md";
 
 const TaskItem = ({ todo, deleteTask }) => {
-  const handleDelete = () => deleteTask(todo.taskName);
-
   return (
     <div>
       <li>
@@ -11,7 +9,10 @@ const TaskItem = ({ todo, deleteTask }) => {
           <p>{todo.taskName}</p>
         </div>
 
-        <MdDeleteSweep style={{ cursor: "pointer" }} onClick={handleDelete} />
+        <MdDeleteSweep
+          style={{ cursor: "pointer" }}
+          onClick={() => deleteTask(todo.taskName)}
+        />
       </li>
     </div>
   );
