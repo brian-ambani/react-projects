@@ -9,6 +9,9 @@ export default function TodoInput({ addTask }) {
 
   const handleAddTask = (e) => {
     e.preventDefault();
+
+    // if task is empty do not add to the todoList
+    if (task.trim() === "") return;
     addTask(task);
     // clear the input field
     setTask("");
