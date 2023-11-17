@@ -13,7 +13,6 @@ function App() {
     // Adding the newTodo to the list
     setTodoList([...todoList, newTask]);
   };
-  console.log(todoList);
   return (
     <div className="App">
       <h1>Hello React</h1>
