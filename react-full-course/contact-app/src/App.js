@@ -20,7 +20,7 @@ function App() {
       {/* <ComponentA /> */}
       {/* <AppContext /> */}
       {/* <Counter /> */}
-      <Todo />
+      {/* <Todo /> */}
     </div>
   );
 }
