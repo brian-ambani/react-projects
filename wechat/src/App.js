@@ -1,7 +1,11 @@
+import Home from "./Home";
+import Navbar from "./Navbar";
+
 function App() {
   return (
     <div className="App">
-      <h1>All Components</h1>
+      <Navbar />
+      <Home />
     </div>
   );
 }
