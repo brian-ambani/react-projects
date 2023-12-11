@@ -1,8 +1,8 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import About from "./components/About";
+// import About from "./components/About";
 import Nav from "./components/Nav";
-import Services from "./components/Services";
 import OrderSummary from "./components/OrderSummary";
 import NotMatch from "./components/NotMatch";
 import Products from "./components/Products";
@@ -11,14 +11,26 @@ import NewProducts from "./components/NewProducts";
 import Users from "./components/Users";
 import UserDetails from "./components/UserDetails";
 import Admin from "./components/Admin";
+import { Profile } from "./components/Profile";
+import { AuthProvider } from "./components/auth";
+import { Login } from "./components/Login";
+import { RequireAuth } from "./components/RequireAuth";
+const LazyAbout = React.lazy(() => import("./components/About"));
+
 function App() {
   return (
-    <div className="App">
+    <AuthProvider>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="services" element={<Services />} />
+        <Route
+          path="about"
+          element={
+            <React.Suspense fallback="Loading...">
+              <LazyAbout />
+            </React.Suspense>
+          }
+        />
         <Route path="order-summary" element={<OrderSummary />} />
         <Route path="products" element={<Products />}>
           <Route index element={<FeaturedProducts />} />
@@ -29,9 +41,18 @@ function App() {
           <Route path=":userId" element={<UserDetails />} />
           <Route path="admin" element={<Admin />} />
         </Route>
+        <Route
+          path="profile"
+          element={
+            <RequireAuth>
+              <Profile />
+            </RequireAuth>
+          }
+        />
+        <Route path="login" element={<Login />} />
         <Route path="*" element={<NotMatch />} />
       </Routes>
-    </div>
+    </AuthProvider>
   );
 }
 
