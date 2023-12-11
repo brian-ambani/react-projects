@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-nav {
+.nav-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,4 +20,12 @@ nav a {
 
 nav a.active {
   font-weight: bold;
+}
+
+.product-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
 }
