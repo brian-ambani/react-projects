@@ -5,7 +5,7 @@ export const Hook2 = () => {
 
   useEffect(() => {
     document.title = `${count} new Messsages!`;
-  });
+  }, []);
   return (
     <div>
       <h1>useEffectHook</h1>
